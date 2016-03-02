@@ -1,5 +1,5 @@
 package project1;
 
-public class Faculty {
+public class Faculty extends Account {
 
 }
