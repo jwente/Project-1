@@ -6,17 +6,27 @@ public class Faculty extends Account
 
     private final int MAX_BOOKS_RENT = 4;
 
-    public Faculty(String firstName, char middleInitial, String lastName, String emailAddress)
+    private Book[] rentedBooks;
+
+    public Faculty(String firstName, char middleInitial, String lastName, String emailAddress, String userID)
     {
-        super(firstName, middleInitial, lastName, emailAddress);
+        super(firstName, middleInitial, lastName, emailAddress, userID);
+
+        this.rentedBooks = new Book[MAX_BOOKS_RENT];
 
         this.booksRented = 0;
     }
 
-    public boolean rentBook()
+    public int getBooksRented()
+    {
+        return this.booksRented;
+    }
+
+    public boolean rentBook(Book book)
     {
         if(booksRented < MAX_BOOKS_RENT)
         {
+            this.rentedBooks[this.booksRented] = book;
             this.booksRented++;
             return true;
         }

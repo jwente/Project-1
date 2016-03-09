@@ -2,18 +2,21 @@ package project1;
 
 public class Account
 {
-    String firstName;
-    char middleInitial;
-    String lastName;
+    private String firstName;
+    private char middleInitial;
+    private String lastName;
 
-    String emailAddress;
+    private String emailAddress;
 
-    public Account(String firstName, char middleInitial, String lastName, String emailAddress)
+    private String userID;
+
+    public Account(String firstName, char middleInitial, String lastName, String emailAddress, String userID)
     {
         this.firstName = firstName;
         this.middleInitial = middleInitial;
         this.lastName = lastName;
         this.emailAddress = emailAddress;
+        this.userID = userID;
     }
 
 
