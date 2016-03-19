@@ -3,25 +3,53 @@ package project1;
 public class Account
 {
     private String firstName;
-    private char middleInitial;
+    private String middleInitial;
     private String lastName;
-
     private String emailAddress;
+    private String userName;
+    private String Password;
+    private String PayPal;
 
-    private String userID;
-
-    public Account(String firstName, char middleInitial, String lastName, String emailAddress, String userID)
-    {
-        this.firstName = firstName;
-        this.middleInitial = middleInitial;
-        this.lastName = lastName;
-        this.emailAddress = emailAddress;
-        this.userID = userID;
+    public Account() {
+    	
+    }
+    
+    public Account(String firstName, String middleInitial, String lastName, String emailAddress, String userName, String Password, String payPal) {
+        setFirstName(firstName);
+        setMiddleInitial(middleInitial);
+        setLastName(lastName);
+        setEmailAddress(emailAddress);
+        setUserName(userName);
+        setPassword(Password);
+        setPayPal(payPal);
     }
 
 
+	public String getPayPal() {
+		return PayPal;
+	}
 
-    public String getFirstName() {
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+	public String getPassword() {
+		return Password;
+	}
+
+	public void setPassword(String password) {
+		Password = password;
+	}
+
+	public void setPayPal(String payPal) {
+		PayPal = payPal;
+	}
+
+	public String getFirstName() {
         return firstName;
     }
 
@@ -37,11 +65,11 @@ public class Account
         this.lastName = lastName;
     }
 
-    public char getMiddleInitial() {
+    public String getMiddleInitial() {
         return middleInitial;
     }
 
-    public void setMiddleInitial(char middleInitial) {
+    public void setMiddleInitial(String middleInitial) {
         this.middleInitial = middleInitial;
     }
 
