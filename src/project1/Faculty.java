@@ -3,15 +3,17 @@ package project1;
 public class Faculty extends Account
 {
     private int booksRented;
-
     private final int MAX_BOOKS_RENT = 4;
-
     private Book[] rentedBooks;
+    private String Status;
+    
+    public Faculty() {
+    	
+    }
 
-    public Faculty(String firstName, char middleInitial, String lastName, String emailAddress, String userID)
+    public Faculty(String firstName, String middleInitial, String lastName, String emailAddress, String userName, String Password, String PayPal)
     {
-        super(firstName, middleInitial, lastName, emailAddress, userID);
-
+        super(firstName, middleInitial, lastName, emailAddress, userName, Password, PayPal);
         this.rentedBooks = new Book[MAX_BOOKS_RENT];
 
         this.booksRented = 0;
@@ -35,4 +37,12 @@ public class Faculty extends Account
             return false;
         }
     }
+
+	public String getStatus() {
+		return Status;
+	}
+
+	public void setStatus(String status) {
+		Status = status;
+	} 
 }
