@@ -108,6 +108,7 @@ public class LoginPanel extends JFrame
                     ResultSet result = ps.executeQuery();
                     if(result.next()) {
                         JOptionPane.showMessageDialog(null, result.getString(1));
+                        //JOptionPane.showMessageDialog(null, result.getString(0));
                         if(result.getString(1).compareTo("admin") == 0) {
                             close();
                             AdminPanel admin = new AdminPanel();
@@ -116,6 +117,15 @@ public class LoginPanel extends JFrame
                         }
                         else {
                             close();
+
+//                            ps = conn.prepareStatement("SELECT [Users ID, [Users UN], [Users Pass], [Users FN], [Users MI], [Users LN], [Users Email], [Users Paypal], [Users Status] FROM [Users]");
+//                            ResultSet results = ps.executeQuery();
+//
+//                            while(result.next())
+//                            {
+//
+//                            }
+
                             UserPanel user = new UserPanel();
                             user.setVisible(true);
                             result.close();

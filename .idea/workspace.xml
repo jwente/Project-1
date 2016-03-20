@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4ea0fc5-5ea5-4833-8ef2-dce8569c2d3d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/project1/AdminPanel.java" afterPath="$PROJECT_DIR$/src/project1/AdminPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/project1/Book.java" afterPath="$PROJECT_DIR$/src/project1/Book.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/project1/BookStore.java" afterPath="$PROJECT_DIR$/src/project1/BookStore.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/project1/Genre.java" afterPath="$PROJECT_DIR$/src/project1/Genre.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/project1/Book.class" afterPath="$PROJECT_DIR$/bin/project1/Book.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/project1/BookStore.class" afterPath="$PROJECT_DIR$/bin/project1/BookStore.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/project1/Genre.class" afterPath="$PROJECT_DIR$/bin/project1/Genre.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/project1/Login_Panel$2.class" afterPath="$PROJECT_DIR$/bin/project1/Login_Panel$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/project1/LoginPanel.java" afterPath="$PROJECT_DIR$/src/project1/LoginPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/project1/Login_Panel.java" afterPath="$PROJECT_DIR$/src/project1/Login_Panel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/project1/Main.java" afterPath="$PROJECT_DIR$/src/project1/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/project1/RegistrationPanel.java" afterPath="$PROJECT_DIR$/src/project1/RegistrationPanel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/project1/UserPanel.java" afterPath="$PROJECT_DIR$/src/project1/UserPanel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -33,22 +31,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="Faculty.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/project1/Faculty.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="UserPanel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/project1/UserPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47588426">
-              <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.59003216">
+              <caret line="115" column="37" selection-start-line="115" selection-start-column="37" selection-end-line="115" selection-end-column="37" />
               <folding>
-                <element signature="e#2742#4987#0" expanded="true" />
-                <element signature="e#3271#3272#0" expanded="true" />
-                <element signature="e#3327#3328#0" expanded="true" />
-                <element signature="e#3448#3449#0" expanded="true" />
-                <element signature="e#3508#3509#0" expanded="true" />
-                <element signature="e#3620#3621#0" expanded="true" />
-                <element signature="e#3689#3690#0" expanded="true" />
-                <element signature="e#4986#4987#0" expanded="true" />
-                <element signature="e#5223#5383#0" expanded="true" />
-                <element signature="e#5382#5383#0" expanded="true" />
+                <element signature="e#2742#4959#0" expanded="true" />
+                <element signature="e#3265#3266#0" expanded="true" />
+                <element signature="e#3321#3322#0" expanded="true" />
+                <element signature="e#3442#3443#0" expanded="true" />
+                <element signature="e#3502#3503#0" expanded="true" />
+                <element signature="e#3614#3615#0" expanded="true" />
+                <element signature="e#3683#3684#0" expanded="true" />
+                <element signature="e#4958#4959#0" expanded="true" />
+                <element signature="e#5195#5436#0" expanded="true" />
+                <element signature="e#5435#5436#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,6 +77,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/project1/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Genre.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/project1/Genre.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -84,6 +102,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginPanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/project1/LoginPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="114" column="51" selection-start-line="114" selection-start-column="51" selection-end-line="114" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -127,13 +155,13 @@
         <option value="$PROJECT_DIR$/src/project1/Faculty.java" />
         <option value="$PROJECT_DIR$/src/project1/Student.java" />
         <option value="$PROJECT_DIR$/src/project1/RegistrationPanel.java" />
-        <option value="$PROJECT_DIR$/src/project1/LoginPanel.java" />
         <option value="$PROJECT_DIR$/src/project1/Login_Panel.java" />
         <option value="$PROJECT_DIR$/src/project1/AdminPanel.java" />
-        <option value="$PROJECT_DIR$/src/project1/Main.java" />
         <option value="$PROJECT_DIR$/src/project1/Genre.java" />
         <option value="$PROJECT_DIR$/src/project1/BookStore.java" />
         <option value="$PROJECT_DIR$/src/project1/Book.java" />
+        <option value="$PROJECT_DIR$/src/project1/Main.java" />
+        <option value="$PROJECT_DIR$/src/project1/LoginPanel.java" />
         <option value="$PROJECT_DIR$/src/project1/UserPanel.java" />
       </list>
     </option>
@@ -485,7 +513,13 @@
       <option name="project" value="LOCAL" />
       <updated>1458446663120</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Changed Functionality so that Database populates bookstore and then bookstore displays table on UserPanel Screen">
+      <created>1458507132549</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1458507132549</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -494,7 +528,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32832617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32805908" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2876923" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -531,7 +565,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit&#10;&#10;- Added RegisterForm" />
     <MESSAGE value="Database works!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Database works!" />
+    <MESSAGE value="Changed Functionality so that Database populates bookstore and then bookstore displays table on UserPanel Screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed Functionality so that Database populates bookstore and then bookstore displays table on UserPanel Screen" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -748,14 +783,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/project1/Faculty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/project1/Student.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -787,14 +814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="136" column="71" selection-start-line="136" selection-start-column="71" selection-end-line="136" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/project1/LoginPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.738255">
-          <caret line="106" column="40" selection-start-line="106" selection-start-column="40" selection-end-line="106" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -834,14 +853,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/project1/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30605564">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/project1/BookStore.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.8330605">
@@ -850,6 +861,22 @@
             <element signature="imports" expanded="true" />
             <element signature="e#4730#4736#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project1/Genre.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project1/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -866,10 +893,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/project1/Genre.java">
+    <entry file="file://$PROJECT_DIR$/src/project1/Faculty.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -882,21 +909,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/project1/LoginPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="114" column="51" selection-start-line="114" selection-start-column="51" selection-end-line="114" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/project1/UserPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47588426">
-          <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.59003216">
+          <caret line="115" column="37" selection-start-line="115" selection-start-column="37" selection-end-line="115" selection-end-column="37" />
           <folding>
-            <element signature="e#2742#4987#0" expanded="true" />
-            <element signature="e#3271#3272#0" expanded="true" />
-            <element signature="e#3327#3328#0" expanded="true" />
-            <element signature="e#3448#3449#0" expanded="true" />
-            <element signature="e#3508#3509#0" expanded="true" />
-            <element signature="e#3620#3621#0" expanded="true" />
-            <element signature="e#3689#3690#0" expanded="true" />
-            <element signature="e#4986#4987#0" expanded="true" />
-            <element signature="e#5223#5383#0" expanded="true" />
-            <element signature="e#5382#5383#0" expanded="true" />
+            <element signature="e#2742#4959#0" expanded="true" />
+            <element signature="e#3265#3266#0" expanded="true" />
+            <element signature="e#3321#3322#0" expanded="true" />
+            <element signature="e#3442#3443#0" expanded="true" />
+            <element signature="e#3502#3503#0" expanded="true" />
+            <element signature="e#3614#3615#0" expanded="true" />
+            <element signature="e#3683#3684#0" expanded="true" />
+            <element signature="e#4958#4959#0" expanded="true" />
+            <element signature="e#5195#5436#0" expanded="true" />
+            <element signature="e#5435#5436#0" expanded="true" />
           </folding>
         </state>
       </provider>

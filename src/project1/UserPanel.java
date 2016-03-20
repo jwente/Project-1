@@ -90,12 +90,12 @@ public class UserPanel extends JFrame
 
                 DefaultTableModel model = new DefaultTableModel()
                 {
-                    String[] columns = {"ID", "Book Name"};
+                    String[] columns = {"Book Name"};
 
                     @Override
                     public int getColumnCount()
                     {
-                        return 2;
+                        return 1;
                     }
 
                     @Override
@@ -113,7 +113,7 @@ public class UserPanel extends JFrame
 
                 for(int i = 0; i < books.size(); i++)
                 {
-                    Object[] data = {books.get(i).getID(), books.get(i).getName()};
+                    Object[] data = {books.get(i).getName()};
 
                     model.addRow(data);
                 }
@@ -150,7 +150,8 @@ public class UserPanel extends JFrame
         btn_rent.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0)
             {
-                //table.getSelectedRow()
+                String name = table.getModel().getValueAt(table.getSelectedRow(), table.getSelectedColumn()).toString();
+
 
             }
         });

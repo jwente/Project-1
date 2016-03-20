@@ -6,6 +6,7 @@ package project1;
 public class Main
 {
     static BookStore store;
+    static Account user;
 
     public static void main(String[] args)
     {
