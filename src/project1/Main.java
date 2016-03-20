@@ -5,8 +5,12 @@ package project1;
  */
 public class Main
 {
+    static BookStore store;
+
     public static void main(String[] args)
     {
+        store = new BookStore();
+
         InitialPanel initialPanel = new InitialPanel();
 
         

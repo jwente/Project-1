@@ -134,7 +134,7 @@ public class Login_Panel extends JFrame {
 					ResultSet result = ps.executeQuery();
 					if(result.next()) {			
 						JOptionPane.showMessageDialog(null, result.getString(1));									
-						if(result.getString(1) == "admin") {
+						if(result.getString(1).compareTo("admin") == 0) {
 							close();
 							Admin_Panel admin = new Admin_Panel();
 							admin.setVisible(true);

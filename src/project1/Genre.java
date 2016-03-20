@@ -13,6 +13,5 @@ public enum Genre
     Law,
     Mathematics,
     Music,
-    Philosophy,
-    Pyschology
+    PhilosophyAndPsychology
 }
