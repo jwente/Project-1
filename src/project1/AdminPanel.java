@@ -9,9 +9,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.*;
 
-/**
- * Created by noah-pena on 3/10/16.
- */
 public class AdminPanel extends JFrame
 {
     private JPanel contentPane;
@@ -80,7 +77,7 @@ public class AdminPanel extends JFrame
 
                     String selection = comboBox.getSelectedItem().toString();
 
-                    ps = conn.prepareStatement("SELECT [Oders ID], [Book Category], [Book Name], [Quantity], [Price], [Date Due] FROM [Orders] WHERE [Users ID] = ?");
+                    ps = conn.prepareStatement("SELECT [Orders ID], [Book Category], [Book Name], [Quantity], [Price], [Date Due] FROM [Orders] WHERE [Users ID] = ?");
                     ps.setString(1, Integer.toString(comboBox.getSelectedIndex() + 1));
                     ResultSet results = ps.executeQuery();
                     table.setModel(DbUtils.resultSetToTableModel(results));
@@ -95,32 +92,5 @@ public class AdminPanel extends JFrame
         btn_load.setFont(new Font("Calibri", Font.PLAIN, 18));
         btn_load.setBounds(10, 209, 150, 30);
         contentPane.add(btn_load);
-
-//        JButton btn_update = new JButton("update Table ");
-//        btn_update.addActionListener(new ActionListener() {
-//            public void actionPerformed(ActionEvent e) {
-//            }
-//        });
-//        btn_update.setFont(new Font("Calibri", Font.PLAIN, 18));
-//        btn_update.setBounds(10, 273, 150, 30);
-//        contentPane.add(btn_update);
-
-//        JButton btn_insert = new JButton("Insert Row");
-//        btn_insert.setFont(new Font("Calibri", Font.PLAIN, 18));
-//        btn_insert.addActionListener(new ActionListener() {
-//            public void actionPerformed(ActionEvent arg0) {
-//            }
-//        });
-//        btn_insert.setBounds(10, 335, 150, 30);
-//        contentPane.add(btn_insert);
-//
-//        JButton btn_delete = new JButton("Delete Row");
-//        btn_delete.setFont(new Font("Calibri", Font.PLAIN, 18));
-//        btn_delete.addActionListener(new ActionListener() {
-//            public void actionPerformed(ActionEvent e) {
-//            }
-//        });
-//        btn_delete.setBounds(10, 395, 150, 30);
-//        contentPane.add(btn_delete);
     }
 }

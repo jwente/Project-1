@@ -12,9 +12,6 @@ import java.awt.event.ActionListener;
 import java.sql.*;
 import java.util.ArrayList;
 
-/**
- * Created by noah-pena on 3/10/16.
- */
 public class UserPanel extends JFrame
 {
     private JPanel contentPane;
@@ -116,27 +113,6 @@ public class UserPanel extends JFrame
                 }
 
                 table.setModel(model);
-
-//                Connection conn = null;
-//                PreparedStatement ps;
-//                try
-//                {
-//                    Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance();
-//                    conn = DriverManager.getConnection("jdbc:sqlserver://teamthree.cejfxkzyperf.us-west-2.rds.amazonaws.com:1433;" +
-//                            "databaseName=Project1", "admin", "Project1");
-//
-//                    String selection = CategoryBox.getSelectedItem().toString();
-//
-//                    ps = conn.prepareStatement("SELECT * FROM ["+selection+"]");
-//                    ResultSet results = ps.executeQuery();
-//                    table.setModel(DbUtils.resultSetToTableModel(results));
-//
-//                    results.close();
-//                    conn.close();
-//                }
-//                catch(Exception e4) {
-//                    JOptionPane.showMessageDialog(null, "Could not connect to database.");
-//                }
             }
         });
         btn_data.setFont(new Font("Calibri", Font.PLAIN, 18));
@@ -153,42 +129,15 @@ public class UserPanel extends JFrame
                 {
                     String msg = Main.store.rentBook(name);
 
-                    if(msg == null)
-                    {
-                        //Add to history
-
-                    }
-                    else
-                    {
-                        JOptionPane.showMessageDialog(null, msg);
-                    }
-
                     UserPanel userPanel = new UserPanel();
                     userPanel.repaint();
-//                    DefaultTableModel model = (DefaultTableModel)table.getModel();
-//                    model.fireTableDataChanged();
-//                    validate();
-//                    repaint();
                 }
                 else if(Main.user.getStatus().equalsIgnoreCase("Faculty"))
                 {
                     String msg = Main.store.rentBook(name);
 
-                    if(msg == null)
-                    {
-                        //Add to history
-                    }
-                    else
-                    {
-                        JOptionPane.showMessageDialog(null, msg);
-                    }
-
                     UserPanel userPanel = new UserPanel();
                     userPanel.repaint();
-//                    DefaultTableModel model = (DefaultTableModel)table.getModel();
-//                    model.fireTableDataChanged();
-//                    validate();
-//                    repaint();
                 }
             }
         });

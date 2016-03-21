@@ -7,9 +7,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-/**
- * Created by noah-pena on 3/10/16.
- */
 public class InitialPanel
 {
     private JFrame frame;

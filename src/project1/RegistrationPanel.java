@@ -8,9 +8,6 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
 import java.sql.*;
 
-/**
- * Created by noah-pena on 3/10/16.
- */
 public class RegistrationPanel extends JFrame
 {
     private JPanel contentPane;
