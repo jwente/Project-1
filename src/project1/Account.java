@@ -2,6 +2,7 @@ package project1;
 
 public class Account
 {
+    private int id;
     private String firstName;
     private String middleInitial;
     private String lastName;
@@ -9,12 +10,11 @@ public class Account
     private String userName;
     private String Password;
     private String PayPal;
-
-    public Account() {
-    	
-    }
+    private String status;
     
-    public Account(String firstName, String middleInitial, String lastName, String emailAddress, String userName, String Password, String payPal) {
+    public Account(int id, String firstName, String middleInitial, String lastName, String emailAddress, String userName, String Password, String payPal, String status)
+    {
+        setID(id);
         setFirstName(firstName);
         setMiddleInitial(middleInitial);
         setLastName(lastName);
@@ -22,8 +22,28 @@ public class Account
         setUserName(userName);
         setPassword(Password);
         setPayPal(payPal);
+        setStatus(status);
     }
 
+    public String getStatus()
+    {
+        return this.status;
+    }
+
+    public void setStatus(String status)
+    {
+        this.status = status;
+    }
+
+    public int getID()
+    {
+        return this.id;
+    }
+
+    public void setID(int id)
+    {
+        this.id = id;
+    }
 
 	public String getPayPal() {
 		return PayPal;

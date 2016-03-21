@@ -244,38 +244,33 @@ public class RegistrationPanel extends JFrame
                 {
                     if(String.valueOf(txt_CUP.getPassword()).compareTo(String.valueOf(txt_UP.getPassword())) == 0)
                     {
-                        if (rdbtn_Faculty.isSelected()) {
-                            Faculty faculty = new Faculty(txt_UN.getText(), txt_MI.getText(), txt_LN.getText(), txt_Email.getText(),
-                                    txt_UN.getText(), txt_UP.getText(), txt_PayPal.getText());
+                        if (rdbtn_Faculty.isSelected())
+                        {
 
-                            firstname = faculty.getFirstName();
-                            middleinitial = faculty.getMiddleInitial();
-                            lastname = faculty.getLastName();
-                            email = faculty.getEmailAddress();
-                            paypal = faculty.getPayPal();
-                            username = faculty.getUserName();
-                            password = faculty.getPassword();
-                            faculty.setStatus("Faculty");
-                            status = faculty.getStatus();
-                        } else if (rdbtn_Student.isSelected()) {
-                            Student student = new Student(txt_UN.getText(), txt_MI.getText(), txt_LN.getText(), txt_Email.getText(),
-                                    txt_UN.getText(), txt_UP.getText(), txt_PayPal.getText());
+                            firstname = txt_FN.getText();
+                            middleinitial = txt_MI.getText();
+                            lastname = txt_LN.getText();
+                            email = txt_Email.getText();
+                            paypal = txt_PayPal.getText();
+                            username = txt_UN.getText();
+                            password = txt_UP.getPassword().toString();
+                            status = "Faculty";
 
-                            firstname = student.getFirstName();
-                            middleinitial = student.getMiddleInitial();
-                            lastname = student.getLastName();
-                            email = student.getEmailAddress();
-                            paypal = student.getPayPal();
-                            username = student.getUserName();
-                            password = student.getPassword();
-                            student.setStatus("Student");
-                            status = student.getStatus();
+                        }
+                        else if (rdbtn_Student.isSelected())
+                        {
+                            firstname = txt_FN.getText();
+                            middleinitial = txt_MI.getText();
+                            lastname = txt_LN.getText();
+                            email = txt_Email.getText();
+                            paypal = txt_PayPal.getText();
+                            username = txt_UN.getText();
+                            password = txt_UP.getPassword().toString();
+                            status = "Student";
                         }
 
-
-
                         if (username == null || password == null || firstname == null || middleinitial == null || lastname == null) {
-                            JOptionPane.showMessageDialog(null, "Please provide listed infromation.");
+                            JOptionPane.showMessageDialog(null, "Please provide listed information.");
 
                             RegistrationPanel registration = new RegistrationPanel();
                             registration.repaint();
@@ -283,6 +278,22 @@ public class RegistrationPanel extends JFrame
                             Statement stmt = conn.createStatement();
                             stmt.execute("INSERT INTO Users ([Users UN], [Users Pass], [Users FN], [Users MI], [Users LN], [Users Email], [Users Paypal], [Users Status]) VALUES ('"
                                     + username + "','" + password + "','" + firstname + "','" + middleinitial + "','" + lastname + "','" + email + "','" + paypal + "','" + status + "')");
+
+                            PreparedStatement ps = conn.prepareStatement("SELECT COUNT(*) FROM [Users]");
+                            ResultSet resultSet = ps.executeQuery();
+
+                            if(resultSet.next())
+                            {
+                                if(status.equalsIgnoreCase("Student"))
+                                {
+                                    Main.user = new Student(resultSet.getInt(1), firstname, middleinitial, lastname, email, username, password, paypal);
+                                }
+                                else
+                                {
+                                    Main.user = new Faculty(resultSet.getInt(1), firstname, middleinitial, lastname, email, username, password, paypal);
+                                }
+                            }
+
                             conn.close();
                             close();
                             LoginPanel login = new LoginPanel();

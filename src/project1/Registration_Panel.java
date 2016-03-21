@@ -269,32 +269,32 @@ public class Registration_Panel extends JFrame {
 				 */
 				try {
 					if(rdbtn_Faculty.isSelected()) {
-						Faculty faculty = new Faculty(txt_UN.getText(), txt_MI.getText(), txt_LN.getText(), txt_Email.getText(), 
-								txt_UN.getText(), txt_UP.getText(), txt_PayPal.getText());
-							
-						firstname = faculty.getFirstName();
-						middleinitial = faculty.getMiddleInitial();
-						lastname = faculty.getLastName();
-						email = faculty.getEmailAddress();
-						paypal = faculty.getPayPal();
-						username = faculty.getUserName();
-						password = faculty.getPassword();
-						faculty.setStatus("Faculty");
-						status = faculty.getStatus();
+//						Faculty faculty = new Faculty(txt_UN.getText(), txt_MI.getText(), txt_LN.getText(), txt_Email.getText(),
+//								txt_UN.getText(), txt_UP.getText(), txt_PayPal.getText());
+//
+//						firstname = faculty.getFirstName();
+//						middleinitial = faculty.getMiddleInitial();
+//						lastname = faculty.getLastName();
+//						email = faculty.getEmailAddress();
+//						paypal = faculty.getPayPal();
+//						username = faculty.getUserName();
+//						password = faculty.getPassword();
+//						faculty.setStatus("Faculty");
+//						status = faculty.getStatus();
 					}
 					else if(rdbtn_Student.isSelected()) {
-						Student student = new Student(txt_UN.getText(), txt_MI.getText(), txt_LN.getText(), txt_Email.getText(), 
-								txt_UN.getText(), txt_UP.getText(), txt_PayPal.getText());
-							
-						firstname = student.getFirstName();
-						middleinitial = student.getMiddleInitial();
-						lastname = student.getLastName();
-						email = student.getEmailAddress();
-						paypal = student.getPayPal();
-						username = student.getUserName();
-						password = student.getPassword();
-						student.setStatus("Student");
-						status = student.getStatus();
+////						Student student = new Student(txt_UN.getText(), txt_MI.getText(), txt_LN.getText(), txt_Email.getText(),
+////								txt_UN.getText(), txt_UP.getText(), txt_PayPal.getText());
+//
+//						firstname = student.getFirstName();
+//						middleinitial = student.getMiddleInitial();
+//						lastname = student.getLastName();
+//						email = student.getEmailAddress();
+//						paypal = student.getPayPal();
+//						username = student.getUserName();
+//						password = student.getPassword();
+//						student.setStatus("Student");
+//						status = student.getStatus();
 					}
 					
 					Statement stmt = conn.createStatement(); 

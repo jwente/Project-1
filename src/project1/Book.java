@@ -23,6 +23,48 @@ public class Book
         this.category = convertStringToGenre(genre);
     }
 
+    static public String convertGenreToString(Genre genre)
+    {
+        if(genre == Genre.Art)
+        {
+            return "Art Books";
+        }
+        else if(genre == Genre.BusinessAndEconomics)
+        {
+            return "Business & Economics Books";
+        }
+        else if(genre == Genre.ComputerScience)
+        {
+            return "Computer Science Books";
+        }
+        else if(genre == Genre.Design)
+        {
+            return "Design Books";
+        }
+        else if(genre == Genre.Education)
+        {
+            return "Education Books";
+        }
+        else if(genre == Genre.Law)
+        {
+            return "Law Books";
+        }
+        else if(genre == Genre.Mathematics)
+        {
+            return "Mathematics Books";
+        }
+        else if(genre == Genre.Music)
+        {
+            return "Music Books";
+        }
+        else if(genre == Genre.PhilosophyAndPsychology)
+        {
+            return "Philosophy & Psychology Books";
+        }
+
+        return null;
+    }
+
     static public Genre convertStringToGenre(String genre)
     {
         if(genre.equalsIgnoreCase("Art Books"))

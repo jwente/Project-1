@@ -9,10 +9,7 @@ import javax.swing.table.TableModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+import java.sql.*;
 import java.util.ArrayList;
 
 /**
@@ -152,7 +149,47 @@ public class UserPanel extends JFrame
             {
                 String name = table.getModel().getValueAt(table.getSelectedRow(), table.getSelectedColumn()).toString();
 
+                if(Main.user.getStatus().equalsIgnoreCase("Student"))
+                {
+                    String msg = Main.store.rentBook(name);
 
+                    if(msg == null)
+                    {
+                        //Add to history
+
+                    }
+                    else
+                    {
+                        JOptionPane.showMessageDialog(null, msg);
+                    }
+
+                    UserPanel userPanel = new UserPanel();
+                    userPanel.repaint();
+//                    DefaultTableModel model = (DefaultTableModel)table.getModel();
+//                    model.fireTableDataChanged();
+//                    validate();
+//                    repaint();
+                }
+                else if(Main.user.getStatus().equalsIgnoreCase("Faculty"))
+                {
+                    String msg = Main.store.rentBook(name);
+
+                    if(msg == null)
+                    {
+                        //Add to history
+                    }
+                    else
+                    {
+                        JOptionPane.showMessageDialog(null, msg);
+                    }
+
+                    UserPanel userPanel = new UserPanel();
+                    userPanel.repaint();
+//                    DefaultTableModel model = (DefaultTableModel)table.getModel();
+//                    model.fireTableDataChanged();
+//                    validate();
+//                    repaint();
+                }
             }
         });
         btn_rent.setFont(new Font("Calibri", Font.PLAIN, 18));

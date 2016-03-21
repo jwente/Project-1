@@ -3,10 +3,7 @@ package project1;
 import sun.util.calendar.BaseCalendar;
 
 import javax.swing.*;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
@@ -181,43 +178,85 @@ public class BookStore
         return total;
     }
 
-    public Faculty rentBook(Faculty faculty, String bookName)
+    public String rentBook(String bookName)
     {
         Calendar calendar = Calendar.getInstance();
 
-        calendar.add(Calendar.DAY_OF_YEAR, 14);
-
-        int index = books.indexOf(searchByName(bookName));
-
-        if(faculty.rentBook(books.get(index), calendar))
+        if(Main.user.getStatus().equalsIgnoreCase("Student"))
         {
-            books.remove(index);
+            calendar.add(Calendar.DAY_OF_YEAR, 7);
+
+            Book book = searchByName(bookName);
+
+            if(book == null)
+            {
+                return "Book cannot be found";
+            }
+
+            int index = books.indexOf(book);
+
+            String msg = ((Student)Main.user).rentBook(books.get(index), calendar);
+
+            if(msg == null)
+            {
+                addToHistory(book);
+                books.remove(index);
+                return null;
+            }
+            else
+            {
+                return msg;
+            }
         }
         else
         {
-            System.out.printf("%s has already checked out %d books", faculty.getFirstName(), faculty.getBooksRented());
+            calendar.add(Calendar.DAY_OF_YEAR, 14);
+
+            Book book = searchByName(bookName);
+
+            int index = books.indexOf(book);
+
+            String msg = ((Faculty)Main.user).rentBook(books.get(index), calendar);
+
+            if(msg == null)
+            {
+                addToHistory(book);
+                books.remove(index);
+                return null;
+            }
+            else
+            {
+                return msg;
+            }
         }
 
-        return faculty;
+
     }
 
-    public Student rentBook(Student student, String bookName)
+    private String addToHistory(Book book)
     {
-        Calendar calendar = Calendar.getInstance();
-
-        calendar.add(Calendar.DAY_OF_YEAR, 7);
-
-        int index = books.indexOf(searchByName(bookName));
-
-        if(student.rentBook(books.get(index), calendar))
-        {
-            books.remove(index);
+        Connection conn = null;
+        try {
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance();
+            conn = DriverManager.getConnection("jdbc:sqlserver://teamthree.cejfxkzyperf.us-west-2.rds.amazonaws.com:1433;" +
+                    "databaseName=Project1", "admin", "Project1");
         }
-        else
-        {
-            System.out.printf("%s has already checked out %d books", student.getFirstName(), student.getBooksRented());
+        catch(Exception e1) {
+            JOptionPane.showMessageDialog(null, "Could not connect to the Database.");
         }
 
-        return student;
+        try
+        {
+            Statement stmt = conn.createStatement();
+            stmt.execute("INSERT INTO Orders ([Users ID], [Book Category], [Book Name], [Quantity], [Price]) VALUES ('"
+                    + Main.user.getID() + "','" + Book.convertGenreToString(book.getCategory()) + "','" + book.getName() + "','" + 1 + "','" + "4.99" + "')");
+
+        }
+        catch(Exception e)
+        {
+
+        }
+
+        return null;
     }
 }

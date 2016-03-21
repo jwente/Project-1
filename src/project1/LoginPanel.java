@@ -102,7 +102,7 @@ public class LoginPanel extends JFrame
 					/*
 					 * Query database for user login credentials
 					 */
-                    ps = conn.prepareStatement("SELECT [Users UN], [Users Pass] FROM [Users] WHERE [Users UN] = ? AND [Users Pass] = ?");
+                    ps = conn.prepareStatement("SELECT [Users UN], [Users Pass], [Users ID], [Users Status], [Users FN], [Users MI], [Users LN], [Users Email], [Users Paypal] FROM [Users] WHERE [Users UN] = ? AND [Users Pass] = ?");
                     ps.setString(1, txt_UN.getText());
                     ps.setString(2, String.valueOf(txt_UP.getText()));
                     ResultSet result = ps.executeQuery();
@@ -118,13 +118,14 @@ public class LoginPanel extends JFrame
                         else {
                             close();
 
-//                            ps = conn.prepareStatement("SELECT [Users ID, [Users UN], [Users Pass], [Users FN], [Users MI], [Users LN], [Users Email], [Users Paypal], [Users Status] FROM [Users]");
-//                            ResultSet results = ps.executeQuery();
-//
-//                            while(result.next())
-//                            {
-//
-//                            }
+                            if(result.getString(4).compareTo("Student") == 0)
+                            {
+                                Main.user = new Student(result.getInt(3), result.getString(5), result.getString(6), result.getString(7), result.getString(8), result.getString(1), result.getString(2), result.getString(9));
+                            }
+                            else if(result.getString(4).compareTo("Faculty") == 0)
+                            {
+                                Main.user = new Faculty(result.getInt(3), result.getString(5), result.getString(6), result.getString(7), result.getString(8), result.getString(1), result.getString(2), result.getString(9));
+                            }
 
                             UserPanel user = new UserPanel();
                             user.setVisible(true);
