@@ -47,17 +47,14 @@ public class AdminPanel extends JFrame
             conn = DriverManager.getConnection("jdbc:sqlserver://teamthree.cejfxkzyperf.us-west-2.rds.amazonaws.com:1433;" +
                     "databaseName=Project1", "admin", "Project1");
 
+            ps = conn.prepareStatement("SELECT [Users UN] FROM [Users]");
+            ResultSet resultSet = ps.executeQuery();
 
-            ResultSet results = conn.getMetaData().getTables("Project1", "dbo", null, null);
-            ResultSetMetaData meta = (ResultSetMetaData) results.getMetaData();
-
-            int columns = meta.getColumnCount();
-
-            while(results.next()) {
-                String name = results.getString("TABLE_NAME");
+            while(resultSet.next()) {
+                String name = resultSet.getString(1);
                 comboBox.addItem(name);
             }
-            results.close();
+            resultSet.close();
         }
         catch(Exception e4) {
             JOptionPane.showMessageDialog(null, "Could not connect to database.");
@@ -83,7 +80,8 @@ public class AdminPanel extends JFrame
 
                     String selection = comboBox.getSelectedItem().toString();
 
-                    ps = conn.prepareStatement("SELECT * FROM ["+selection+"]");
+                    ps = conn.prepareStatement("SELECT [Oders ID], [Book Category], [Book Name], [Quantity], [Price], [Date Due] FROM [Orders] WHERE [Users ID] = ?");
+                    ps.setString(1, Integer.toString(comboBox.getSelectedIndex() + 1));
                     ResultSet results = ps.executeQuery();
                     table.setModel(DbUtils.resultSetToTableModel(results));
                     results.close();
@@ -98,31 +96,31 @@ public class AdminPanel extends JFrame
         btn_load.setBounds(10, 209, 150, 30);
         contentPane.add(btn_load);
 
-        JButton btn_update = new JButton("update Table ");
-        btn_update.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-            }
-        });
-        btn_update.setFont(new Font("Calibri", Font.PLAIN, 18));
-        btn_update.setBounds(10, 273, 150, 30);
-        contentPane.add(btn_update);
+//        JButton btn_update = new JButton("update Table ");
+//        btn_update.addActionListener(new ActionListener() {
+//            public void actionPerformed(ActionEvent e) {
+//            }
+//        });
+//        btn_update.setFont(new Font("Calibri", Font.PLAIN, 18));
+//        btn_update.setBounds(10, 273, 150, 30);
+//        contentPane.add(btn_update);
 
-        JButton btn_insert = new JButton("Insert Row");
-        btn_insert.setFont(new Font("Calibri", Font.PLAIN, 18));
-        btn_insert.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent arg0) {
-            }
-        });
-        btn_insert.setBounds(10, 335, 150, 30);
-        contentPane.add(btn_insert);
-
-        JButton btn_delete = new JButton("Delete Row");
-        btn_delete.setFont(new Font("Calibri", Font.PLAIN, 18));
-        btn_delete.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-            }
-        });
-        btn_delete.setBounds(10, 395, 150, 30);
-        contentPane.add(btn_delete);
+//        JButton btn_insert = new JButton("Insert Row");
+//        btn_insert.setFont(new Font("Calibri", Font.PLAIN, 18));
+//        btn_insert.addActionListener(new ActionListener() {
+//            public void actionPerformed(ActionEvent arg0) {
+//            }
+//        });
+//        btn_insert.setBounds(10, 335, 150, 30);
+//        contentPane.add(btn_insert);
+//
+//        JButton btn_delete = new JButton("Delete Row");
+//        btn_delete.setFont(new Font("Calibri", Font.PLAIN, 18));
+//        btn_delete.addActionListener(new ActionListener() {
+//            public void actionPerformed(ActionEvent e) {
+//            }
+//        });
+//        btn_delete.setBounds(10, 395, 150, 30);
+//        contentPane.add(btn_delete);
     }
 }

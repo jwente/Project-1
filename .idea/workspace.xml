@@ -2,22 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4ea0fc5-5ea5-4833-8ef2-dce8569c2d3d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/project1/Account.class" afterPath="$PROJECT_DIR$/bin/project1/Account.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/project1/Admin.class" afterPath="$PROJECT_DIR$/bin/project1/Admin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/project1/Faculty.class" afterPath="$PROJECT_DIR$/bin/project1/Faculty.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/project1/Registration_Panel$2.class" afterPath="$PROJECT_DIR$/bin/project1/Registration_Panel$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/project1/Registration_Panel.class" afterPath="$PROJECT_DIR$/bin/project1/Registration_Panel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/project1/Student.class" afterPath="$PROJECT_DIR$/bin/project1/Student.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/project1/Account.java" afterPath="$PROJECT_DIR$/src/project1/Account.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/project1/Admin.java" afterPath="$PROJECT_DIR$/src/project1/Admin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/project1/Book.java" afterPath="$PROJECT_DIR$/src/project1/Book.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/project1/Book.class" afterPath="$PROJECT_DIR$/bin/project1/Book.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/project1/BookStore.class" afterPath="$PROJECT_DIR$/bin/project1/BookStore.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/project1/AdminPanel.java" afterPath="$PROJECT_DIR$/src/project1/AdminPanel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/project1/BookStore.java" afterPath="$PROJECT_DIR$/src/project1/BookStore.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/project1/Faculty.java" afterPath="$PROJECT_DIR$/src/project1/Faculty.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/project1/LoginPanel.java" afterPath="$PROJECT_DIR$/src/project1/LoginPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/project1/RegistrationPanel.java" afterPath="$PROJECT_DIR$/src/project1/RegistrationPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/project1/Registration_Panel.java" afterPath="$PROJECT_DIR$/src/project1/Registration_Panel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/project1/Student.java" afterPath="$PROJECT_DIR$/src/project1/Student.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/project1/UserPanel.java" afterPath="$PROJECT_DIR$/src/project1/UserPanel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Project-1.iws" />
@@ -39,146 +28,128 @@
     <favorites_list name="Project-1" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="BookStore.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/project1/BookStore.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.61736333">
-                  <caret line="252" column="0" selection-start-line="252" selection-start-column="0" selection-end-line="252" selection-end-column="0" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#4628#4634#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Book.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/project1/Book.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="64" column="20" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="UserPanel.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/project1/UserPanel.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="158" column="0" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#2640#4857#0" expanded="true" />
-                    <element signature="e#3163#3164#0" expanded="true" />
-                    <element signature="e#3219#3220#0" expanded="true" />
-                    <element signature="e#3340#3341#0" expanded="true" />
-                    <element signature="e#3400#3401#0" expanded="true" />
-                    <element signature="e#3512#3513#0" expanded="true" />
-                    <element signature="e#3581#3582#0" expanded="true" />
-                    <element signature="e#4856#4857#0" expanded="true" />
-                    <element signature="e#5093#6795#0" expanded="true" />
-                    <element signature="e#6794#6795#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/project1/Main.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="LoginPanel.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/project1/LoginPanel.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="123" column="29" selection-start-line="123" selection-start-column="29" selection-end-line="123" selection-end-column="29" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="RegistrationPanel.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/project1/RegistrationPanel.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="292" column="152" selection-start-line="292" selection-start-column="152" selection-end-line="292" selection-end-column="152" />
-                  <folding>
-                    <element signature="e#6503#11021#0" expanded="true" />
-                    <element signature="e#11020#11021#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Registration_Panel.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/project1/Registration_Panel.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="274" column="59" selection-start-line="271" selection-start-column="2" selection-end-line="282" selection-end-column="53" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Admin.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/project1/Admin.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="7" column="102" selection-start-line="7" selection-start-column="102" selection-end-line="7" selection-end-column="102" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Faculty.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/project1/Faculty.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="38" column="70" selection-start-line="38" selection-start-column="70" selection-end-line="38" selection-end-column="70" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Student.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/project1/Student.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
-                  <folding>
-                    <element signature="e#1292#1293#0" expanded="true" />
-                    <element signature="e#1314#1315#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="RegistrationPanel.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/project1/RegistrationPanel.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.7266881">
-                  <caret line="281" column="105" selection-start-line="281" selection-start-column="105" selection-end-line="281" selection-end-column="105" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="BookStore.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/project1/BookStore.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="230" column="9" selection-start-line="230" selection-start-column="9" selection-end-line="230" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#4628#4634#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Book.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/project1/Book.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="64" column="20" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminPanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/project1/AdminPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="82" column="128" selection-start-line="82" selection-start-column="128" selection-end-line="82" selection-end-column="128" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserPanel.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/project1/UserPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.0385852">
+              <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+              <folding>
+                <element signature="e#2640#4857#0" expanded="true" />
+                <element signature="e#3163#3164#0" expanded="true" />
+                <element signature="e#3219#3220#0" expanded="true" />
+                <element signature="e#3340#3341#0" expanded="true" />
+                <element signature="e#3400#3401#0" expanded="true" />
+                <element signature="e#3512#3513#0" expanded="true" />
+                <element signature="e#3581#3582#0" expanded="true" />
+                <element signature="e#4856#4857#0" expanded="true" />
+                <element signature="e#5093#6795#0" expanded="true" />
+                <element signature="e#6794#6795#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/project1/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginPanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/project1/LoginPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="123" column="29" selection-start-line="123" selection-start-column="29" selection-end-line="123" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegistrationPanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/project1/RegistrationPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="280" column="0" selection-start-line="280" selection-start-column="0" selection-end-line="280" selection-end-column="0" />
+              <folding>
+                <element signature="e#6503#11021#0" expanded="true" />
+                <element signature="e#11020#11021#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Registration_Panel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/project1/Registration_Panel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="271" column="128" selection-start-line="271" selection-start-column="128" selection-end-line="271" selection-end-column="128" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Faculty.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/project1/Faculty.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Student.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/project1/Student.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+              <folding>
+                <element signature="e#1292#1293#0" expanded="true" />
+                <element signature="e#1314#1315#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -212,7 +183,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/project1/RegisterForm.form" />
         <option value="$PROJECT_DIR$/src/project1/Login_Panel.java" />
-        <option value="$PROJECT_DIR$/src/project1/AdminPanel.java" />
         <option value="$PROJECT_DIR$/src/project1/Genre.java" />
         <option value="$PROJECT_DIR$/src/project1/Main.java" />
         <option value="$PROJECT_DIR$/src/project1/LoginPanel.java" />
@@ -221,10 +191,11 @@
         <option value="$PROJECT_DIR$/src/project1/Account.java" />
         <option value="$PROJECT_DIR$/src/project1/Admin.java" />
         <option value="$PROJECT_DIR$/src/project1/Student.java" />
-        <option value="$PROJECT_DIR$/src/project1/Faculty.java" />
         <option value="$PROJECT_DIR$/src/project1/UserPanel.java" />
         <option value="$PROJECT_DIR$/src/project1/Book.java" />
         <option value="$PROJECT_DIR$/src/project1/BookStore.java" />
+        <option value="$PROJECT_DIR$/src/project1/Faculty.java" />
+        <option value="$PROJECT_DIR$/src/project1/AdminPanel.java" />
       </list>
     </option>
   </component>
@@ -573,8 +544,8 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Registration_Panel" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Admin_Panel" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Admin_Panel" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Registration_Panel" />
         <item index="3" class="java.lang.String" itemvalue="Application.User_Panel" />
         <item index="4" class="java.lang.String" itemvalue="Application.Login_Panel" />
       </list>
@@ -609,7 +580,13 @@
       <option name="project" value="LOCAL" />
       <updated>1458508872877</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Users can now rent books and the orders will reflect on the orders database">
+      <created>1458520828034</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1458520828034</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -657,7 +634,8 @@
     <MESSAGE value="Database works!" />
     <MESSAGE value="Changed Functionality so that Database populates bookstore and then bookstore displays table on UserPanel Screen" />
     <MESSAGE value="Currently working on linking login account to java object" />
-    <option name="LAST_COMMIT_MESSAGE" value="Currently working on linking login account to java object" />
+    <MESSAGE value="Users can now rent books and the orders will reflect on the orders database" />
+    <option name="LAST_COMMIT_MESSAGE" value="Users can now rent books and the orders will reflect on the orders database" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -898,17 +876,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/project1/AdminPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-          <folding>
-            <element signature="e#2450#3495#0" expanded="true" />
-            <element signature="e#3494#3495#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/project1/Initial_Panel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -966,26 +933,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/project1/LoginPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/project1/Book.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="123" column="29" selection-start-line="123" selection-start-column="29" selection-end-line="123" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/project1/Registration_Panel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="274" column="59" selection-start-line="271" selection-start-column="2" selection-end-line="282" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/project1/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <caret line="64" column="20" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -1004,15 +955,69 @@
     <entry file="file://$PROJECT_DIR$/src/project1/Faculty.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="70" selection-start-line="38" selection-start-column="70" selection-end-line="38" selection-end-column="70" />
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project1/LoginPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="123" column="29" selection-start-line="123" selection-start-column="29" selection-end-line="123" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project1/RegistrationPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="280" column="0" selection-start-line="280" selection-start-column="0" selection-end-line="280" selection-end-column="0" />
+          <folding>
+            <element signature="e#6503#11021#0" expanded="true" />
+            <element signature="e#11020#11021#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project1/Registration_Panel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="271" column="128" selection-start-line="271" selection-start-column="128" selection-end-line="271" selection-end-column="128" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project1/AdminPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="82" column="128" selection-start-line="82" selection-start-column="128" selection-end-line="82" selection-end-column="128" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project1/BookStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="230" column="9" selection-start-line="230" selection-start-column="9" selection-end-line="230" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4628#4634#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project1/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/project1/UserPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="158" column="0" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
+        <state vertical-scroll-proportion="1.0385852">
+          <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
           <folding>
             <element signature="e#2640#4857#0" expanded="true" />
             <element signature="e#3163#3164#0" expanded="true" />
@@ -1024,36 +1029,6 @@
             <element signature="e#4856#4857#0" expanded="true" />
             <element signature="e#5093#6795#0" expanded="true" />
             <element signature="e#6794#6795#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/project1/RegistrationPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="292" column="152" selection-start-line="292" selection-start-column="152" selection-end-line="292" selection-end-column="152" />
-          <folding>
-            <element signature="e#6503#11021#0" expanded="true" />
-            <element signature="e#11020#11021#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/project1/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="64" column="20" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/project1/BookStore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61736333">
-          <caret line="252" column="0" selection-start-line="252" selection-start-column="0" selection-end-line="252" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4628#4634#0" expanded="true" />
           </folding>
         </state>
       </provider>

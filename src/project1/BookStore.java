@@ -199,7 +199,7 @@ public class BookStore
 
             if(msg == null)
             {
-                addToHistory(book);
+                addToHistory(book, calendar);
                 books.remove(index);
                 return null;
             }
@@ -220,7 +220,7 @@ public class BookStore
 
             if(msg == null)
             {
-                addToHistory(book);
+                addToHistory(book, calendar);
                 books.remove(index);
                 return null;
             }
@@ -233,7 +233,7 @@ public class BookStore
 
     }
 
-    private String addToHistory(Book book)
+    private String addToHistory(Book book, Calendar returnDate)
     {
         Connection conn = null;
         try {
@@ -248,8 +248,8 @@ public class BookStore
         try
         {
             Statement stmt = conn.createStatement();
-            stmt.execute("INSERT INTO Orders ([Users ID], [Book Category], [Book Name], [Quantity], [Price]) VALUES ('"
-                    + Main.user.getID() + "','" + Book.convertGenreToString(book.getCategory()) + "','" + book.getName() + "','" + 1 + "','" + "4.99" + "')");
+            stmt.execute("INSERT INTO Orders ([Users ID], [Username], [Book Category], [Book Name], [Quantity], [Price], [Date Due]) VALUES ('"
+                    + Main.user.getID() + "','" + Main.user.getUserName() + "','" + Book.convertGenreToString(book.getCategory()) + "','" + book.getName() + "','" + 1 + "','" + "4.99" + "','" + returnDate.getTime().toString() + "')");
 
         }
         catch(Exception e)

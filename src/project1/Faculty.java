@@ -5,7 +5,7 @@ import java.util.Calendar;
 public class Faculty extends Account
 {
     private int booksRented;
-    private final int MAX_BOOKS_RENT = 4;
+    private final int MAX_BOOKS_RENT = 3;
     private Book[] rentedBooks;
     private String[] returnDates;
     private String Status;
