@@ -249,7 +249,7 @@ public class BookStore
         {
             Statement stmt = conn.createStatement();
             stmt.execute("INSERT INTO Orders ([Users ID], [Username], [Book Category], [Book Name], [Quantity], [Price], [Date Due]) VALUES ('"
-                    + Main.user.getID() + "','" + Main.user.getUserName() + "','" + Book.convertGenreToString(book.getCategory()) + "','" + book.getName() + "','" + 1 + "','" + "4.99" + "','" + returnDate.getTime().toString() + "')");
+                    + Main.user.getID() + "','" + Main.user.getUserName() + "','" + Book.convertGenreToString(book.getCategory()) + "','" + book.getName() + "','" + 1 + "','" + (Main.user.getStatus().equalsIgnoreCase("Student")) ? "7.99" : "9.99" + "','" + returnDate.getTime().toString() + "')");
 
         }
         catch(Exception e)
